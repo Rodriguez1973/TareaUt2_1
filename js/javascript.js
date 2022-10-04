@@ -17,13 +17,13 @@ operacion.onchange = function () {
 //}
 //}
 numero.onchange = function () {
-  if(numero.value!=""){
+  if (numero.value != '') {
     realizarConversion()
   }
 }
 
-numero.onfocus=function(){
-  numero.select();
+numero.onfocus = function () {
+  numero.select()
 }
 
 /*Captura el evento de onclick en la <p id="cerrar_navegador">*/
@@ -84,7 +84,7 @@ function cambiaTipo(num, opcion) {
 
 /*Función que realiza la validación de la cadena antes de la conversión.*/
 function validarCadena(num, opcion) {
-  let valido = true;
+  let valido = true
   switch (opcion) {
     //Opciones donde es necesario validar si es una cadena válida para un decimal.
     case 'dec_bin':
@@ -92,7 +92,7 @@ function validarCadena(num, opcion) {
     case 'dec_hex':
       for (let i = 0; i < num.length; i++) {
         if (num.charAt(i) < '0' || num.charAt(i) > '9') {
-          valido = false;
+          valido = false
           break
         }
       }
@@ -118,7 +118,12 @@ function validarCadena(num, opcion) {
     //Opcion donde es necesario validar si es una cadena válida para un hexadecimaloctal.
     case 'hex_dec':
       for (let i = 0; i < num.length; i++) {
-        if (!((num.charAt(i) >= '0' && num.charAt(i) <= '9') || (num.charAt(i) >= 'A' && num.charAt(i) <= 'Z'))) {
+        if (
+          !(
+            (num.charAt(i) >= '0' && num.charAt(i) <= '9') ||
+            (num.charAt(i) >= 'A' && num.charAt(i) <= 'F')
+          )
+        ) {
           valido = false
           break
         }
@@ -127,5 +132,5 @@ function validarCadena(num, opcion) {
     default:
       break
   }
-  return valido;
+  return valido
 }
