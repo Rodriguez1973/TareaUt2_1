@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversión de tipos numéricos</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css" />
+    <script src="./js/javascript.js" defer></script>
+  </head>
+
+  <body>
+    <main id="principal">
+      <header class="cabecera">
+        <div>
+          <!-- Logo y TITULO-->
+          <h1 id="tit_principal">Decimal, Binario, Octal y Hexadecimal</h1>
+          <p id="cerrar_navegador">Cerrar Navegador</p>
+        </div>
+      </header>
+      <article class="titulo">
+        <h1>Conversión de tipos</h1>
+      </article>
+
+      <article class="conversor">
+        <header>
+          <h3>Conversión entre sistemas de numeración</h3>
+        </header>
+        <section>
+          <div class="num">
+            <label for="numero">Número</label>
+            <input type="text" name="numero" id="numero" value="" required/>
+            <br />
+          </div>
+          <div class="tip">
+            <label for="operacion">Conversión</label>
+            <select name="operacion" id="operacion">
+              <optgroup label="De DECIMAL a">
+                <option value="dec_bin">Binario</option>
+                <option value="dec_oct">Octal</option>
+                <option value="dec_hex">Hexadecimal</option>
+              </optgroup>
+
+              <optgroup label="De tipo a DECIMAL">
+                <option value="bin_dec">Binario</option>
+                <option value="oct_dec">Octal</option>
+                <option value="hex_dev">Hexadecimal</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="res">
+            <label for="resultado">Resultado</label>
+            <input type="text" name="resultado" id="resultado" value="" readonly/>
+            <br />
+          </div>
+        </section>
+      </article>
+      <aside class="teoria">
+        <div class="tipos_datos">
+          <h3>JavaScript trabaja con los siguientes tipos de datos:</h3>
+          <ul>
+            <li>number</li>
+            <li>boolean</li>
+            <li>string</li>
+            <li>undefined</li>
+            <li>Objetos</li>
+          </ul>
+        </div>
+
+        <div class="tipos_conversion">
+          <h3>Conversión de Tipos</h3>
+          <ul>
+            <li>Automáticas</li>
+            <li>parseInt</li>
+            <li>parseFloat</li>
+            <li>numero.toFixed(n)</li>
+            <li>numero.toExponential(n)</li>
+            <li>numero.toString(base)</li>
+          </ul>
+        </div>
+      </aside>
+      <footer class="pie">
+        <p>Desarrollo de aplicaciones Web(DAW) &copy; CIFP Santa Catalina</p>
+        <p>Realizado por: José A. Rodríguez López.</p>
+      </footer>
+    </main>
+  </body>
+</html>
