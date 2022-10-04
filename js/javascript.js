@@ -1,3 +1,7 @@
+/* Proyecto realizado por: José A. Rodríguez López-->
+ * Fecha: 04/10/2022
+ */
+
 /*Captura el evento de cambio en la <select id="operacion">*/
 //document.getElementById('operacion').onchange = function () {
 //  realizarConversion();
