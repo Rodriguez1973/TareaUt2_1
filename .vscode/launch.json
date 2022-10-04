@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "E:/Trabajo en curso/TareaUt2_1/index.html"
+            "file": "D:/Trabajo en curso/TareaUt2_1/index.html"
         }
     ]
 }
