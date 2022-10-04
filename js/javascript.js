@@ -8,10 +8,18 @@ operacion.onchange = function () {
 
 /*Captura el evento de cambio en la <input id="numero">*/
 //document.getElementById('numero').onchange = function () {
-
+//if(numero.value!=""){
+//  realizarConversion()
+//}
 //}
 numero.onchange = function () {
-  
+  if(numero.value!=""){
+    realizarConversion()
+  }
+}
+
+numero.onfocus=function(){
+  numero.select();
 }
 
 /*Captura el evento de onclick en la <p id="cerrar_navegador">*/
