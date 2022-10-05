@@ -6,22 +6,25 @@
 //document.getElementById('operacion').onchange = function () {
 //  realizarConversion();
 //}
+/*Captura el evento de cambio en la <select id="operacion">*/
 operacion.onchange = function () {
   realizarConversion()
 }
 
 /*Captura el evento de cambio en la <input id="numero">*/
 //document.getElementById('numero').onchange = function () {
-//if(numero.value!=""){
-//  realizarConversion()
+//  if(numero.value!=""){
+//    realizarConversion()
 //}
 //}
+/*Captura el evento de cambio en la <input id="numero">*/
 numero.onchange = function () {
   if (numero.value != '') {
     realizarConversion()
   }
 }
 
+/*Captura el evento de toma del foco en la <input id="numero">*/
 numero.onfocus = function () {
   numero.select()
 }
@@ -58,21 +61,27 @@ function realizarConversion() {
 function cambiaTipo(num, opcion) {
   let result = ''
   switch (opcion) {
+    //Decimal a binario.
     case 'dec_bin':
       result = parseInt(num).toString(2)
       break
+    //Decimal a octal.
     case 'dec_oct':
       result = parseInt(num).toString(8)
       break
+    //Decimal a hexadecimal.
     case 'dec_hex':
       result = parseInt(num).toString(16)
       break
+    //Binario a decimal.
     case 'bin_dec':
       result = parseInt(num, 2)
       break
+    //Octal a decimal.
     case 'oct_dec':
       result = parseInt(num, 8)
       break
+    //Hexadecimal a decimal.
     case 'hex_dec':
       result = parseInt(num, 16)
       break
